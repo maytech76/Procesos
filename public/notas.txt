@@ -1,0 +1,29 @@
+implementando Webpay con transbank
+
+1. Creamos un nuevo controlador php artisan make:controller WebpayController
+
+
+
+
+B. Implementando el envio de correos electronicos:
+
+1. Inicamos creando un nuevo controlador php artisan make:controller EmailController
+
+2. Editamos el controlador:
+                                public function index()
+                                    {
+                                        return view('email.index');
+                                    }
+
+3. Creamos la carpeta email y el archivo index.blade.php en Views
+
+4. 
+
+
+**ENVIAR CORREO ELECTRONICO DESDE FORMULARIO DE CONTACTO***
+
+1. Creamos un controllador php artisan make:controller ContactanosController
+
+2. creamos la ruta Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
+
+3. 
